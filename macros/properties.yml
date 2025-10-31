@@ -1,0 +1,15 @@
+macros:
+  - name: cents_to_dollars
+    description: blah...blah...
+    arguments:
+      - name: column_name
+        description: blah...blah..
+        type: string
+      - name: decimals
+        description: blah...blah...
+        type: integer
+        default: 2
+    returns: "An SQL expression that converts the amount from cents to dollars"
+    examples:
+      - description: "Convert the 'amount' column from cents to dollars with default 2 decimal places."
+        code: "{{ cents_to_dollars('amount') }}"    
